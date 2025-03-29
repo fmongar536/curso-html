@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. PRIMERO PASOS EN EDICIÓN HTML | Prog_HTML </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Javier Montoro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Prog_HTML</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin_a_las_pginas_web.html" class="no-ch">1. INTRODUCCIÓN A LAS PÁGINAS WEB</a></li>
+   <li><a href="2_edicin_de_pginas_web_en_lenguaje_html.html" class="no-ch">2. EDICIÓN DE PÁGINAS WEB EN LENGUAJE HTML</a></li>
+   <li id="active"><a href="3_primero_pasos_en_edicin_html.html" class="active daddy">3. PRIMERO PASOS EN EDICIÓN HTML</a>
+   <ul>
+      <li><a href="31_estructura_bsica_de_un_documento_html.html" class="no-ch">3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</a></li>
+      <li><a href="32_formato_de_texto.html" class="no-ch">3.2 FORMATO DE TEXTO</a></li>
+   </ul>
+   </li>
+   <li><a href="4_hojas_estilo_css.html" class="no-ch">4. HOJAS ESTILO CSS</a></li>
+   <li><a href="5_publicar_las_pginas_html.html" class="no-ch">5. PUBLICAR LAS PÁGINAS HTML</a></li>
+   <li><a href="6_editores_hatml_visuales.html" class="no-ch">6. EDITORES HATML VISUALES</a></li>
+   <li><a href="7_javascript.html" class="no-ch">7. JAVASCRIPT</a></li>
+   <li><a href="8_pginas_web_con_google_sites.html" class="daddy">8. PÁGINAS WEB CON GOOGLE SITES</a>
+   <ul class="other-section">
+      <li><a href="81_insertar_cdigo_javascript_en_pginas_de_google_sites.html" class="no-ch">8.1 INSERTAR CÓDIGO JAVASCRIPT EN PÁGINAS DE GOOGLE SITES</a></li>
+   </ul>
+   </li>
+   <li><a href="9_crditos.html" class="no-ch">9. CRÉDITOS</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="2_edicin_de_pginas_web_en_lenguaje_html.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="31_estructura_bsica_de_un_documento_html.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3. PRIMERO PASOS EN EDICIÓN HTML</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id3">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">3. PRIMEROS PASOS EN EDICIÓN HTML</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_130_2" class="block iDevice_content">
+<div class="exe-text"><p>El lenguaje <strong>HTML</strong> está compuesto por una serie de etiquetas (<em>Tags</em>) que el navegador interpreta y da forma en la pantalla (etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.).</p>
+<p>Las etiquetas se escriben empleando los caracteres menor que <code>&lt;</code>, mayor que <code>&gt;</code> y barra inclinada <code>/</code>.</p>
+<p>Las palabras clave del lenguaje se denominan <strong>elementos</strong> y se colocan entre los caracteres vistos anteriormente, según se trate de una etiqueta de inicio o de una etiqueta de fin.</p>
+<p>Los elementos pueden escribirse indistintamente en minúscula, mayúscula o ambas.</p>
+<p>Por ejemplo, para el elemento <code>html</code> existen las etiquetas de inicio <code>&lt;html&gt;</code> y de fin <code>&lt;/html&gt;</code>.</p>
+<p>Veamos los principales elementos de todo documento HTML:</p>
+<h3>Elemento <code>html</code></h3>
+<p>Representa al elemento raíz <code>html</code> que en todo documento HTML hay que escribir al principio y al final.</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+&lt;/html&gt;</code></pre>
+<h3>Elemento <code>head</code></h3>
+<p>Dentro del elemento <code>html</code>, es decir, entre <code>&lt;html&gt;</code> y <code>&lt;/html&gt;</code>, se debe escribir el elemento <code>head</code> que, como iremos viendo a lo largo del tutorial, puede contener diversa información sobre el documento:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+
+  &lt;/head&gt;
+
+&lt;/html&gt;</code></pre>
+<p>Las etiquetas se suelen indentar o colocar en distintos niveles de tabulación para hacer el código más legible.</p>
+<h3>Elemento <code>title</code></h3>
+<p>Entre <code>&lt;head&gt;</code> y <code>&lt;/head&gt;</code> se pueden escribir otros elementos. Por ejemplo, el elemento <code>title</code>, el cual sirve para indicar el título del documento.</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+
+    &lt;title&gt;Ejemplo&lt;/title&gt;
+
+  &lt;/head&gt;
+
+&lt;/html&gt;</code></pre>
+<p>Es el título que se visualiza en la parte superior de la pestaña donde se muestra la página web en el navegador.</p>
+<p><img src="3_ejemplo_html.png" alt="" width="501" height="138" style="display: block; margin-left: auto; margin-right: auto;" />Las etiquetas pueden colocarse en la misma línea, como en el código anterior, aunque se suelen colocar arriba y abajo para una mejor comprensión del código.</p>
+<h3>Elemento <code>body</code></h3>
+<p>En un documento HTML, después del <code>head</code>, hay que escribir el elemento <code>body</code>:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+
+    &lt;title&gt;Ejemplo&lt;/title&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+<p>El elemento <code>body</code> alberga todo el contenido (párrafos, imágenes, vídeos...) del documento, los cuales se mostrarán en el navegador.</p>
+<h3>Elemento <code>p</code></h3>
+<p>En este caso, entre <code>&lt;body&gt;</code> y <code>&lt;/body&gt;</code> se incluyen dos elementos <code>p</code> delimitados por la etiqueta de inicio <code>&lt;p&gt;</code> y la de cierre <code>&lt;/p&gt;</code>:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+
+    &lt;title&gt;Ejemplo&lt;/title&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;p&gt;Mi primera página web&lt;/p&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+<p>En este apartado se pueden añadir tantos párrafos como necesitemos.</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;html&gt;
+
+  &lt;head&gt;
+
+    &lt;title&gt;Ejemplo de 2 párrafos&lt;/title&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;p&gt;Esto es un párrafo.&lt;/p&gt;
+
+    &lt;p&gt;Esto es otro párrafo.&lt;/p&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+<h3>Elemento <code>font</code></h3>
+<p>Mediante <code>&lt;font&gt; ... &lt;/font&gt;</code> podemos escribir un párrafo seleccionando el tipo de fuente, el tamaño de la letra y el color, como veremos más adelante.</p>
+<div style="background-color: #fff3cd; border-left: 5px solid #ffcc00; padding: 10px; margin-top: 20px;">
+<h4>📝 ACTIVIDADES (4)</h4>
+<ul>
+<li>Instala el editor de texto Notepadqq.</li>
+<li>Abre el editor de texto Notepadqq y copia el código visto justo anteriormente.</li>
+<li>Guárdalo como <code>Ejemplo.html</code>.</li>
+<li>Después, busca en el ordenador la página creada y ábrela con el navegador.</li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="2_edicin_de_pginas_web_en_lenguaje_html.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="31_estructura_bsica_de_un_documento_html.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

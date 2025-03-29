@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML | Prog_HTML </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Javier Montoro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-5"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Prog_HTML</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin_a_las_pginas_web.html" class="no-ch">1. INTRODUCCIÓN A LAS PÁGINAS WEB</a></li>
+   <li><a href="2_edicin_de_pginas_web_en_lenguaje_html.html" class="no-ch">2. EDICIÓN DE PÁGINAS WEB EN LENGUAJE HTML</a></li>
+   <li class="current-page-parent"><a href="3_primero_pasos_en_edicin_html.html" class="current-page-parent daddy">3. PRIMERO PASOS EN EDICIÓN HTML</a>
+   <ul>
+      <li id="active"><a href="31_estructura_bsica_de_un_documento_html.html" class="active no-ch">3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</a></li>
+      <li><a href="32_formato_de_texto.html" class="no-ch">3.2 FORMATO DE TEXTO</a></li>
+   </ul>
+   </li>
+   <li><a href="4_hojas_estilo_css.html" class="no-ch">4. HOJAS ESTILO CSS</a></li>
+   <li><a href="5_publicar_las_pginas_html.html" class="no-ch">5. PUBLICAR LAS PÁGINAS HTML</a></li>
+   <li><a href="6_editores_hatml_visuales.html" class="no-ch">6. EDITORES HATML VISUALES</a></li>
+   <li><a href="7_javascript.html" class="no-ch">7. JAVASCRIPT</a></li>
+   <li><a href="8_pginas_web_con_google_sites.html" class="daddy">8. PÁGINAS WEB CON GOOGLE SITES</a>
+   <ul class="other-section">
+      <li><a href="81_insertar_cdigo_javascript_en_pginas_de_google_sites.html" class="no-ch">8.1 INSERTAR CÓDIGO JAVASCRIPT EN PÁGINAS DE GOOGLE SITES</a></li>
+   </ul>
+   </li>
+   <li><a href="9_crditos.html" class="no-ch">9. CRÉDITOS</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="3_primero_pasos_en_edicin_html.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_formato_de_texto.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id5">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Hemos escrito la estructura básica de un documento HTML que muestra por pantalla dos párrafos. Gráficamente, los elementos utilizados se pueden representar del siguiente modo:</p>
+<!-- Aquí podrías insertar una imagen si la tienes -->
+<p>Finalmente, completaremos el código de este primer ejemplo añadiendo algunas cosas:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang="es-ES"&gt;
+
+  &lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;Ejemplo de 2 párrafos&lt;/title&gt;
+
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+    &lt;p&gt;Esto es un párrafo.&lt;/p&gt;
+
+    &lt;p&gt;Esto es otro párrafo.&lt;/p&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+<p>A continuación pasamos a explicarlas:</p>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code> en la primera línea. Esta es la forma de indicar al navegador donde se visualice el documento que este está escrito en la versión HTML5.</li>
+<li><code>lang="es-ES"</code> en la etiqueta de inicio <code>&lt;html&gt;</code>. Esto sirve para especificar, mediante el atributo <code>lang</code>, el idioma del contenido del elemento <code>html</code>. En este caso español (España).</li>
+<li><code>&lt;meta charset="utf-8"&gt;</code> dentro del elemento <code>head</code>. Así, se indica la codificación de caracteres del documento, en esta ocasión UTF-8 (8-bit Unicode Transformation Format, Formato de Transformación Unicode de 8 bits). Obsérvese que, el elemento <code>meta</code> está vacío (no tiene contenido) y en consecuencia, no necesita ser cerrado escribiendo <code>&lt;/meta&gt;</code>. Si no incluimos esta línea, no se mostrarán las tildes ni la letra ñ.</li>
+</ul>
+<div style="background-color: #fff3cd; border-left: 5px solid #ffcc00; padding: 10px; margin-bottom: 15px;">
+<p><strong>🧪 Ejercicio:</strong> En el siguiente editor de HTML, borra el mensaje de bienvenida y pega el último código visto. Puedes ver el resultado inmediatamente en la ventana de abajo.</p>
+</div>
+<p><strong>Prueba a crear más párrafos.</strong></p>
+<p><strong></strong></p>
+<div style="background-color: #e7f1ff; padding: 10px; border-left: 5px solid #004080; margin-bottom: 20px;">
+<h4>✍️ Editor interactivo de HTML</h4>
+<textarea id="htmlCode" style="width: 100%; height: 200px; font-family: monospace; font-size: 1em;">&lt;!-- Escribe aquí tu código HTML --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es-ES"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hola mundo&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </textarea> <br /><button onclick="verHTML()" style="margin-top: 10px; padding: 8px 16px; font-weight: bold;">🔎 Visualizar</button></div>
+<p>
+<script>
+  function verHTML() {
+    const codigo = document.getElementById('htmlCode').value;
+    const nuevaVentana = window.open();
+    nuevaVentana.document.open();
+    nuevaVentana.document.write(codigo);
+    nuevaVentana.document.close();
+  }
+</script>
+</p>
+<p><strong></strong></p>
+<h3>Comentarios</h3>
+<p>En todos los lenguajes de programación existe la posibilidad de incluir <strong>comentarios</strong> dentro del código. Los comentarios son muy útiles para los programadores, para comprender un programa que no han hecho ellos o para explicar ciertas partes del código de un documento.</p>
+<p>En HTML, los comentarios pueden escribirse entre los caracteres <code>&lt;!--</code> y <code>--&gt;</code>.</p>
+<p>Por ejemplo:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;!-- Esto es un comentario escrito en un documento HTML --&gt;</code></pre>
+<p>El intérprete de código ignora todos los comentarios.</p>
+<!-- Continúa con la sección 3.2 en el próximo paso -->
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="3_primero_pasos_en_edicin_html.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_formato_de_texto.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

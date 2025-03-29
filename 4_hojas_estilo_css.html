@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. HOJAS ESTILO CSS | Prog_HTML </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Javier Montoro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">Prog_HTML</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="1_introduccin_a_las_pginas_web.html" class="no-ch">1. INTRODUCCIÓN A LAS PÁGINAS WEB</a></li>
+   <li><a href="2_edicin_de_pginas_web_en_lenguaje_html.html" class="no-ch">2. EDICIÓN DE PÁGINAS WEB EN LENGUAJE HTML</a></li>
+   <li><a href="3_primero_pasos_en_edicin_html.html" class="daddy">3. PRIMERO PASOS EN EDICIÓN HTML</a>
+   <ul class="other-section">
+      <li><a href="31_estructura_bsica_de_un_documento_html.html" class="no-ch">3.1 ESTRUCTURA BÁSICA DE UN DOCUMENTO HTML</a></li>
+      <li><a href="32_formato_de_texto.html" class="no-ch">3.2 FORMATO DE TEXTO</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="4_hojas_estilo_css.html" class="active no-ch">4. HOJAS ESTILO CSS</a></li>
+   <li><a href="5_publicar_las_pginas_html.html" class="no-ch">5. PUBLICAR LAS PÁGINAS HTML</a></li>
+   <li><a href="6_editores_hatml_visuales.html" class="no-ch">6. EDITORES HATML VISUALES</a></li>
+   <li><a href="7_javascript.html" class="no-ch">7. JAVASCRIPT</a></li>
+   <li><a href="8_pginas_web_con_google_sites.html" class="daddy">8. PÁGINAS WEB CON GOOGLE SITES</a>
+   <ul class="other-section">
+      <li><a href="81_insertar_cdigo_javascript_en_pginas_de_google_sites.html" class="no-ch">8.1 INSERTAR CÓDIGO JAVASCRIPT EN PÁGINAS DE GOOGLE SITES</a></li>
+   </ul>
+   </li>
+   <li><a href="9_crditos.html" class="no-ch">9. CRÉDITOS</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="32_formato_de_texto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_publicar_las_pginas_html.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">4. HOJAS ESTILO CSS</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">4. HOJAS ESTILO CSS</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Con todo lo visto hasta ahora, podemos controlar el tipo de letra, color y posición de los títulos y textos de un documento editado en HTML. Si realizamos un documento extenso, con varios tipos de letra, colores, etc., el código se complica ya que hay que utilizar muchos elementos de formato de texto.</p>
+<p>A partir de la versión 5 de HTML se han incluido las <strong>hojas de estilos CSS</strong>, que simplifican enormemente el formato de texto dentro de un documento HTML, ya que <strong>separa el contenido</strong> de la página del <strong>diseño</strong> de la misma.</p>
+<p>Una hoja de estilos es un archivo con extensión <code>.css</code> que contiene los formatos de texto prediseñados de algunas etiquetas.<img src="CSS.png" alt="" width="304" height="166" style="float: right;" /></p>
+<p>El archivo <code>.css</code> debe ir junto al archivo <code>.html</code>, aunque también puede incluirse el contenido del archivo <code>.css</code> dentro del archivo <code>.html</code>.</p>
+<p>Las hojas de estilo están formadas por <strong>reglas</strong>, y las reglas están formadas por el <strong>selector</strong> y entre llaves las <strong>declaraciones</strong> separadas por punto y coma.</p>
+<p>Una declaración es un <strong>atributo</strong> (propiedad) seguido por dos puntos y a continuación el <strong>valor</strong> de la propiedad.</p>
+<h4>Ejemplo: El siguiente código HTML contiene una definición de estilo para los párrafos. En dicha página, todos los párrafos serán de color rojo y centrados (a menos que se indique lo contrario en un párrafo concreto).</h4>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;!DOCTYPE html&gt;<img src="CSS_2.png" width="471" height="282" style="float: right; margin-bottom: 40px; margin-top: 40px;" />
+&lt;html lang="es-ES"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Ejemplo de párrafo rojo y centrado&lt;/title&gt;
+    &lt;style&gt;
+<span style="color: #ff0000;">      p {
+        color: red;
+        text-align: center;
+      }</span>
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Esto es un párrafo de color rojo y centrado.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>También podríamos incluir la siguiente línea en nuestro código HTML, que nos enlaza con un archivo llamado <code>estilos.css</code>:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es-ES"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Ejemplo de párrafo rojo y centrado&lt;/title&gt;
+    <span style="color: #ff0000;">&lt;link rel="StyleSheet" href="estilos.css" type="text/css"&gt;</span>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Esto es un párrafo de color rojo y centrado.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>El archivo <code>estilos.css</code> contendría la definición de los estilos:</p>
+<pre style="font-size: 1.1em; background-color: #f5f5f5; color: #003366; padding: 10px; border-left: 5px solid #004080;"><span style="color: #ff0000;"><code>p {
+  color: red;
+  text-align: center;
+}</code></span></pre>
+<div style="background-color: #fff3cd; border-left: 5px solid #ffcc00; padding: 10px; margin-top: 20px;">
+<h4>📝 ACTIVIDADES (8)</h4>
+<ul>
+<li>¿Qué son las hojas de estilo?</li>
+<li>¿Qué ventajas tiene el usar una hoja de estilos en una página HTML?</li>
+<li>¿Qué partes tienen las definiciones de las hojas de estilo?</li>
+<li>Explica los dos métodos que existen de aplicar las hojas de estilo.</li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="32_formato_de_texto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_publicar_las_pginas_html.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
